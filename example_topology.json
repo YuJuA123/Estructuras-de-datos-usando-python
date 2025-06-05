@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "N1",
+      "name": "Estaci\u00f3n Central",
+      "type": "CENTRAL",
+      "location": [
+        50,
+        50
+      ],
+      "resources": [
+        {
+          "type": "AMBULANCIA",
+          "count": 5
+        },
+        {
+          "type": "BOMBEROS",
+          "count": 3
+        },
+        {
+          "type": "POLICIA",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "N2",
+      "name": "Estaci\u00f3n Norte",
+      "type": "ESTACION",
+      "location": [
+        20,
+        80
+      ],
+      "resources": [
+        {
+          "type": "AMBULANCIA",
+          "count": 2
+        },
+        {
+          "type": "POLICIA",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "N3",
+      "name": "Estaci\u00f3n Sur",
+      "type": "ESTACION",
+      "location": [
+        80,
+        20
+      ],
+      "resources": [
+        {
+          "type": "BOMBEROS",
+          "count": 3
+        },
+        {
+          "type": "PROTECCION_CIVIL",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "N4",
+      "name": "Router Este",
+      "type": "ROUTER",
+      "location": [
+        90,
+        50
+      ],
+      "resources": []
+    },
+    {
+      "id": "N5",
+      "name": "Router Oeste",
+      "type": "ROUTER",
+      "location": [
+        10,
+        50
+      ],
+      "resources": []
+    }
+  ],
+  "connections": [
+    {
+      "node1": "N1",
+      "node2": "N2",
+      "weight": 5.0
+    },
+    {
+      "node1": "N1",
+      "node2": "N3",
+      "weight": 4.5
+    },
+    {
+      "node1": "N1",
+      "node2": "N4",
+      "weight": 3.0
+    },
+    {
+      "node1": "N1",
+      "node2": "N5",
+      "weight": 3.5
+    },
+    {
+      "node1": "N2",
+      "node2": "N5",
+      "weight": 2.0
+    },
+    {
+      "node1": "N3",
+      "node2": "N4",
+      "weight": 2.5
+    }
+  ]
+}
